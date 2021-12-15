@@ -12,6 +12,7 @@ body{
     margin: 0 auto;
     display: flex;
     position: sticky;
+    padding: 10px 0;
     top: 0;
     background-color: #ffffff;
 }
