@@ -8,11 +8,11 @@ body{
 }
 
 #navbarD{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     position: sticky;
-    padding: 10px 0;
+    padding: 20px 0;
     top: 0;
     background-color: #ffffff;
 }
@@ -91,17 +91,40 @@ p{
     box-shadow: 5px 5px 5px 5px slategray;
 }
 
-.description h6{
+.description h3{
     color: #242d4c;
 }
 
 .description{
-    background-color: #fafafa;
+    margin: 25px 0;
+}
+
+.description p{
+    width:75%;
+}
+
+.description::before{
+    background-color: #ee6339;
+    width:10px;
+    height: 5px;
+    content: '01';
+    position: relative;
+    left: 0;
 }
 
 #firstPart2{
     width: 40%;
     margin : 0 auto;
+}
+
+#firstPart2 h2{    
+    color: #242d4c; 
+    margin: 25px 0;
+}
+
+#firstPart2 p{
+    width: 60%;
+    margin-top: 10px;
 }
 
 #secPart2{
