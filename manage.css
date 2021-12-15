@@ -11,9 +11,16 @@ body{
     width: 90%;
     margin: 0 auto;
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
 }
 
 #menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
 }
 
 .container{
@@ -21,33 +28,83 @@ body{
 }
 
 
+#thirdContainer h2{
+    margin: 80px 0;
+    color: #242d4c;
+    font-size: 4vw;
+}
+
 #thirdContainer{
+    text-align: center;
+}
+
+#thirdContainer button{
+    margin-top: 20px;
+    
 }
 
 #feedBackContainer{
     display: flex;
+    /*justify-content: space-evenly;*/
 }
 
 
 .feedBack{
-    margin: 0 3vW;
-    background-color: #fafafa;;
+    width: 40vw;
+    background-color: #fafafa;
     text-align: center;
-    margin: 4vh 0 6vh;
+    margin: 0 20px;
+    padding-bottom: 10px;
+}
+
+.feedBack img{
+    position: relative;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+}
+
+.feedBack h6{
+    color: #242d4c;
+    font-size: 1.5vw;
+
 }
 
 p{
     padding: 12px 0;
+    font-size: 1.2vw;
     color:#3b404e;
-    font-size: .5rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    /*font-family:*/
 }
 
 .startButton{
     color:#ffffff;
     background-color: #ee6339;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5rem;
     cursor: pointer;
 }
+
+.startButton:hover{
+    box-shadow: 5px 5px 5px 5px slategray;
+}
+
+.description h6{
+    color: #242d4c;
+}
+
+.description{
+    background-color: #fafafa;
+}
+
+#firstPart2{
+    width: 40%;
+    margin : 0 auto;
+}
+
+#secPart2{
+    width:40%;
+}
+
+
