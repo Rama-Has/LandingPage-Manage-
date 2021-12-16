@@ -3,18 +3,16 @@
     padding: 0;
 }
 
-body{
-    background-color: #ffffff;
-}
 
 #navbarD{
-    width: 100%;
+   /* width: 100%;
     margin: 0 auto;
     display: flex;
     position: sticky;
     padding: 20px 0;
     top: 0;
-    background-color: #ffffff;
+    overflow: hidden;
+    background-color: white;*/
 }
 
 #menu{
@@ -88,10 +86,11 @@ p{
 }
 
 .startButton:hover{
-    box-shadow: 5px 5px 5px 5px slategray;
+    box-shadow: 0 0 15px 0 #ee6339;
 }
 
 .description h3{
+    margin: 0 25px;
     color: #242d4c;
 }
 
@@ -100,16 +99,28 @@ p{
 }
 
 .description p{
+    margin: 0 25px;
     width:75%;
 }
 
 .description::before{
     background-color: #ee6339;
-    width:10px;
-    height: 5px;
     content: '01';
     position: relative;
     left: 0;
+    border-radius: 2rem;
+    padding: 6px 18px;
+    bottom: -20px;
+    left: -40px;
+    color: white;
+    font-size: 12px;
+}
+.description:nth-child(2)::before{
+    content: '02';   
+}
+
+.description:nth-child(3)::before{
+    content: '03';   
 }
 
 #firstPart2{
@@ -130,5 +141,8 @@ p{
 #secPart2{
     width:40%;
 }
+
+
+
 
 
