@@ -7,6 +7,8 @@ body{
     background-image: url('public/background.png'); 
     background-repeat: no-repeat;
     background-position:-380px 300px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
 }
 
 #navbarD{
@@ -16,7 +18,6 @@ body{
     position: sticky;
     padding: 20px 0;
     top: 0;
-    overflow: hidden;
     background-color: white;
     z-index: 1500;
 }
@@ -26,6 +27,11 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding-left: 20%;
+}
+
+#menu a:hover{
+    text-decoration-color: #ee6339;
+    text-decoration-line: underline;      
 }
 
 .container{
