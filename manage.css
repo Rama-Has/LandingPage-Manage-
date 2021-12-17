@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-image:url("public/background.png");
+    background-repeat: repeat-y;
+    font-family: 'Be Vietnam';
+    color: #242d52;
+}
+/*
 body{
     background-image: url('public/background.png'); 
     background-repeat: no-repeat;
@@ -28,6 +34,7 @@ body{
     justify-content: space-evenly;
     padding-left: 20%;
 }
+*/
 
 #menu a:hover{
     text-decoration-color: #ee6339;
@@ -41,7 +48,7 @@ body{
 
 #thirdContainer h2{
     margin: 80px 0;
-    color: #242d4c;
+    color: #242d52;
     font-size: 4vw;
 }
 
@@ -71,28 +78,32 @@ body{
 .feedBack img{
     position: relative;
     top: -30px;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 .feedBack h6{
-    color: #242d4c;
+    color: #242d52;
     font-size: 1.5vw;
 
 }
+.feedBack p{
+    color: #9197ac;
+    padding: 10px 22px;
+}
 
-p{
+/*p{
     padding: 12px 0;
     font-size: 1.2vw;
     color:#3b404e;
-    /*font-family:*/
-}
+    /*font-family:
+}*/
 
 .startButton{
     color:#ffffff;
     background-color: #ee6339;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 5rem;
     cursor: pointer;
 }
@@ -103,7 +114,7 @@ p{
 
 .description h3{
     margin: 0 25px;
-    color: #242d4c;
+    color: #242d52;
 }
 
 .description{
@@ -113,6 +124,7 @@ p{
 .description p{
     margin: 0 25px;
     width:75%;
+    color: #9197ac;
 }
 
 .description::before{
@@ -121,11 +133,11 @@ p{
     position: relative;
     left: 0;
     border-radius: 2rem;
-    padding: 6px 18px;
-    bottom: -20px;
-    left: -40px;
+    padding: 6px 22px;
+    bottom: -25px;
+    left: -55px;
     color: white;
-    font-size: 12px;
+    font-size: 17px;
 }
 .description:nth-child(2)::before{
     content: '02';   
@@ -141,19 +153,72 @@ p{
 }
 
 #firstPart2 h2{    
-    color: #242d4c; 
+    color: #242d52; 
     margin: 25px 0;
 }
 
 #firstPart2 p{
     width: 60%;
     margin-top: 10px;
+    color: #9197ac;
 }
 
 #secPart2{
     width:40%;
 }
 
+
+
+#navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top:40px;
+    margin-left: 40px;
+   position: relative; 
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+}
+
+a{
+color: #242d52;
+text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+h1{
+    line-height: 70px;
+    font-family: 'Be Vietnam';
+
+}
+#firstPart{
+font-size:30px;
+padding-left: 80px;
+    width: 40%;
+}
+
+#secPart{
+    padding-top: 100px;
+    width:40%;
+    padding-right: 80px;
+}
+
+#firstPart p{
+    font-size: large;
+    font-family: 'Be Vietnam';
+    color: #9197ac;
+}
 
 
 
