@@ -201,7 +201,6 @@ p{
 }
 
 
-
 #navBar{
     width: 100%;
     display: flex;
@@ -209,7 +208,14 @@ p{
     flex-direction: row;
     padding-top:40px;
     margin-left: 40px;
-   position: relative; 
+
+}
+
+#navbarD{
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
 }
 
 #menu{
