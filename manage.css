@@ -9,14 +9,27 @@ body{
     color: #242d52;
 }
 /*
-body{
-    background-image: url('public/background.png'); 
-    background-repeat: no-repeat;
-    background-position:-380px 300px;
-    font-family: 'Be Vietnam Pro', sans-serif;
 
 }
-
+body{
+    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    font-family: 'Be Vietnam';
+     background-position:-380px 300px;
+    color: #242d52;
+}
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top:40px;
+    margin-left: 40px;
+   position: relative; 
+}
+a{
+color: #242d52;
+text-decoration: none;
+}
 #navbarD{
     width: 100%;
     margin: 0 auto;
@@ -27,7 +40,6 @@ body{
     background-color: white;
     z-index: 1500;
 }
-
 #menu{
     width: 60%;
     display: flex;
@@ -42,7 +54,28 @@ body{
 }
 
 .container{
+    justify-content: space-between;
     display: flex;
+    flex-direction: row;
+    
+}
+h1{
+    line-height: 70px;
+    font-family: 'Be Vietnam';
+    
+}
+#firstPart{
+font-size:30px;
+padding-left: 26PX;
+}
+#secPart{
+    padding-top: 100px;
+    
+}
+p{
+    font-size: large;
+    font-family: 'Be Vietnam';
+    color: #9197ac;
 }
 
 
