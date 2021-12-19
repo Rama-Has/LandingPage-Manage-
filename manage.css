@@ -1,15 +1,20 @@
+/*تعديل رابط الصورة
+تعديل firstPart html
+في اكتر من firstPart//تعديل padding-left:26
+تعديل margin-right start button html
+*/
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-image:url("public/background.png");
+    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
     background-repeat: repeat-y;
     font-family: 'Be Vietnam';
     color: #242d52;
+    background-position-x: 120%;/*اضافة موقع الصورة على محور السينات*/
 }
 /*
-
 }
 body{
     background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
@@ -48,6 +53,68 @@ text-decoration: none;
 }
 */
 
+#navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top:40px;
+    margin-left: 40px;
+    
+}
+
+#navbarD{
+
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#menu a{
+color: #242d52;
+text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+h1{
+    line-height: 70px;
+    font-family: 'Be Vietnam';
+
+}
+#firstPart{
+font-size:30px;
+margin-top: 40px;
+padding-left: 26px;
+width: 40%;
+}
+
+#secPart{
+    /*تعديل padding 100-> 120 &width:38*/
+
+    padding-top: 120px;
+    width:38%;
+   /* padding-right: 80px;*/
+}
+
+#firstPart p{
+    font-size:18px;
+    font-family: 'Be Vietnam';
+    color: #9197ac;
+}
+
 #menu a:hover{
     text-decoration-color: #ee6339;
     text-decoration-line: underline;      
@@ -56,22 +123,8 @@ text-decoration: none;
 .container{
     justify-content: space-between;
     display: flex;
-    flex-direction: row;
-    
 }
-h1{
-    line-height: 70px;
-    font-family: 'Be Vietnam';
-    
-}
-#firstPart{
-font-size:30px;
-padding-left: 26PX;
-}
-#secPart{
-    padding-top: 100px;
-    
-}
+
 p{
     font-size: large;
     font-family: 'Be Vietnam';
@@ -200,65 +253,110 @@ p{
     width:40%;
 }
 
-
-#navBar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-top:40px;
-    margin-left: 40px;
-
-}
-
-#navbarD{
-    position: sticky; 
-    top: 0;
-    z-index: 100;
+#startButton3{
+    color: #ee6339;
     background-color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
 }
 
-#menu{
+#firstFooter{
+background-color: #ee6339;
+background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
+width:100%;
+margin-top: 120px;
+justify-content: space-around;
+display: flex;
+color: #ffffff;
+padding-bottom: 50px;
+}
+#firstFooter h1 {
+    line-height: 40px;
+}
+#dots{
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 50%;
+    flex-direction: column;
+    gap: 5px;
 }
-
-a{
-color: #242d52;
-text-decoration: none;
-}
-
-.container{
+#dots2{
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    gap:5px;
 }
-h1{
-    line-height: 70px;
-    font-family: 'Be Vietnam';
-
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+  }
+  #allDots{
+      margin-top: 15px;
+      display: flex;
+      gap:5px;
+  }
+  #secFooter{
+     display: flex;
+      background-color: #1d1e25;
+      padding-bottom: 50px;
+  }
+  .logo{
+    gap:10px;
+    display: flex;
+    flex-direction:row ; 
+  }
+  #menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+    line-height:35px ;
+  }
+  #menuFooter{
+      display: flex;
+      flex-direction: row;
+      gap:40px;
+      padding-left: 30px;
+      padding-top: 60px;
+  }
+  #secFooter .logo{
+      padding-bottom: 100px;
+  }
+  #firstPart4 {
+      padding-left:270px;
+      padding-top:40px ;
+      padding-right: 200px;
+  }
+  #secFooter img {
+      width: 25px;
+      height: 25px;
+  }
+  #menuColumn1{
+   display: flex;
+   flex-direction: column;
 }
-#firstPart{
-font-size:30px;
-padding-left: 80px;
-    width: 40%;
+  #menuColumn2{
+    display: flex;
+    flex-direction: column;
 }
-
-#secPart{
-    padding-top: 100px;
-    width:40%;
-    padding-right: 80px;
+#menuFooter a:hover{
+color: #ee6339;      
 }
-
-#firstPart p{
-    font-size: large;
-    font-family: 'Be Vietnam';
-    color: #9197ac;
+label{
+    background-color: #ffffff;
+    padding: 10px 17px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
 }
-
-
-
+   #secPart4{
+       padding-top:90px;
+       padding-left: 150px;
+   }
+   #copyright{
+       color: #7b716b;
+       padding-top: 130px;
+       padding-left: 40px;
+   }
 
