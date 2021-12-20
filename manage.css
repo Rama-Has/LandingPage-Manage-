@@ -8,7 +8,7 @@
     padding: 0;
 }
 body{
-    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
+   /* background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");*/
     background-repeat: repeat-y;
     font-family: 'Be Vietnam';
     color: #242d52;
@@ -62,7 +62,10 @@ text-decoration: none;
     margin-left: 40px;
     
 }
-
+#testContainer{
+    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;  
+}
 #navbarD{
 
     position: sticky; 
@@ -264,17 +267,29 @@ p{
 }
 
 #firstFooter{
+/*background : url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");*/
 background-color: #ee6339;
-background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
 width:100%;
 margin-top: 120px;
 justify-content: space-around;
 display: flex;
 color: #ffffff;
 padding-bottom: 50px;
+height: 22vh;
+overflow: hidden;
 }
+
+
+#firstFooter img{
+    width:600px;
+    height: 600px;
+    opacity: 10%;
+}
+
 #firstFooter h1 {
     line-height: 40px;
+    position: relative;
+    left : -600px; 
 }
 #dots{
     display: flex;
@@ -350,11 +365,11 @@ label{
     cursor: pointer;
     margin-top: 80px;
 }
-   #secPart4{
+#secPart4{
        padding-top:90px;
        padding-left: 150px;
-   }
-   #copyright{
+    }
+#copyright{
        color: #7b716b;
        padding-top: 130px;
        padding-left: 40px;
