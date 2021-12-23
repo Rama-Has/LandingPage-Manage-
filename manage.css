@@ -9,6 +9,8 @@
 }
 body{
     font-family: 'Be Vietnam';
+    overflow-x: hidden;
+    
     /*color: #242d52;*/
 }
 /*
@@ -50,35 +52,37 @@ text-decoration: none;
 }
 */
 
+#firstBackground{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -400;
+    right: -100px;
+    z-index: -6;
+}
+
 #navBar{
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding-top:40px;
-    margin-left: 40px;
-    
-}
-
-#testContainer{
-    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;  
+    margin-left: 40px;  
 }
 
 #navbarD{
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 7.5% 0 0;
     position: sticky; 
     top: 0;
     z-index: 100;
-    background-color: #ffffff;
 }
 
 #menu{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
 }
 
 #menu a{
@@ -136,16 +140,18 @@ p{
     /* margin : 0 auto;*/
 }
 
-#firstPart2 div{    
+#firstPart2Title{    
     color: #242d52; 
     margin: 25px 0;
     font-size: 40px;
+    font-weight: bolder;
 }
 
-#firstPart2 p{
-    width: 60%;
+#difference{
+    width: 80%;
     margin-top: 10px;
     color: #9197ac;
+    font-size: 18px;
 }
 
 #secPart2{
@@ -239,25 +245,130 @@ p{
 }
 
 @media screen and (max-width: 767px){                                                         
-    #firstPart2{
-        width: 100%;
-        /* margin : 0 auto;*/
-    }
+   /*Add margin- bottom to the firstPart1 to keep the background photo*/
     
     .container{
-        display: grid;
-        width: 85%;
+        display: grid; 
+        grid-template-columns: auto;  
+    }           
+
+    #firstPart2{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #firstPart2Title{    
+        color: #242d52; 
+        margin: 25px 0;
+        font-size: 40px;
+        width: 60%;
+        margin : 0 auto;
+        font-weight: bolder;
+    }
+    
+    #difference{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 15px;
+        color: #9197ac;
+        line-height: 36px;
+        font-size: 20px;
+        margin-bottom: 80px;
+    }    
+
+    #secPart2{
+        width:100%;
+    }
+    
+    .description{
+        margin: 25px 20px;
     }
 
+    .description h3{
+        margin: 25px 0 15px;
+        color: #242d52;
+        background-color: #fff0eb;
+        padding: 5px 0;
+    }
+    
+    .description p{
+        margin: 25px 0 60px;
+        width:100%;
+        color: #9197ac;
+        line-height: 35px;
+    }
+    
+    .description h3::before{
+        background-color: #ee6339;
+        content: '01';
+        position: relative;
+        /*left: 0;*/
+        border-radius: 2rem;
+        padding: 7.5px 24px;
+        left: -50px;
+        bottom: 1px;                                     
+        color: white;
+        font-size: 16px;
+    }
+    .description:nth-child(2)::before{
+        content: '02';   
+    }
+    
+    .description h3:nth-child(3)::before{
+        content: '03';   
+    }
+    .description::before{
+        display:none;
+    }              
+    
+    #thirdContainer{
+        padding-top: 100px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #thirdTitle{
+        color: #242d52;
+        font-size: 45px;
+    }
+    
+    #feedBackContainer{
+        display: flex;
+        padding-top: 110px;
+        /*justify-content: space-evenly;*/
+    }
+    
+    .feedBack{
+        width: 90%;
+        background-color: #fafafa;
+        text-align: center;
+        margin: 0 20px;
+        padding-bottom: 10px;
+    }
+    
+    .feedBack img{
+        position: relative;
+        top: -30px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .names{
+        color: #242d52;
+        font-size: 24px;
+    
+    }
+    .feedBack p{
+        color: #9197ac;
+        padding: 10px 22px;
+    }
+
+    #thirdContainer button{
+        margin-top: 20px;
+    } 
+
 }
-
-
-/*p{
-    padding: 12px 0;
-    font-size: 1.2vw;
-    color:#3b404e;
-    /*font-family:
-}*/
 
 .startButton{
     color:#ffffff;
@@ -300,11 +411,23 @@ p{
     margin: 0 auto;
 }
 
-#firstFooter img{
+#firstFooter img:nth-child(1){
+    width: 584px;                            
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    top: -39px;
+    left: 76px;
+}
+
+#secPart3 + img{
     width:600px;
     height: 600px;
     opacity: 10%;
     position: absolute;
+    right: -371px;
+    bottom: 62px;
+
 }
 
 #firstFooter h1 {
@@ -409,7 +532,7 @@ label{
     cursor: pointer;
     margin-top: 80px;
 }
-
+                                               
 #secPart4{
        padding-top:90px;
        padding-left: 150px;
