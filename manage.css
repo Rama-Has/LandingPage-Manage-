@@ -137,6 +137,7 @@ p{
 
 #firstPart2{
     width: 40%;
+    position: relative;
     /* margin : 0 auto;*/
 }
 
@@ -242,6 +243,15 @@ p{
 .feedBack p{
     color: #9197ac;
     padding: 10px 22px;
+}
+
+#secBackground{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 198;
+    top: 365;
+    z-index: -6;
 }
 
 @media screen and (max-width: 767px){                                                         

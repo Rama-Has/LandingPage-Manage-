@@ -5,16 +5,20 @@
     window.addEventListener('load',initial);
     let navBarD = id('navbarD');
     function initial(){
-        navBarD.addEventListener('scroll', changeBackgroundColor());
-        console.log("FirstFunction");
+        navBarD.addEventListener('scroll', changeBackgroundColor());    
+        /*
+        if(document.body.scrollTop > 15 || document.documentElement.scrollTop > 15){
+            navBarD.style.backgroundColor = '#ffffff';
+        } else{
+            navBarD.style.backgroundColor = 'none';
+        }
+        */
     }
 
     function changeBackgroundColor(){
         navBarD.style.backgroundColor = '#ffffff';
-        console.log("SecondFunction");
     }
-    
-    
+        
     function qs(selector) {
         return document.querySelector(selector);
       }
