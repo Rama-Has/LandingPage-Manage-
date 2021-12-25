@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: 'Be Vietnam';
     overflow-x: hidden;
@@ -51,7 +52,7 @@ text-decoration: none;
     padding-left: 20%;
 }
 */
-
+               
 #firstBackground{
     position: absolute;
     width: 600px;
@@ -197,7 +198,11 @@ p{
 
 #thirdContainer button{
     margin-top: 20px;
-}               
+}
+
+#thirdContainer input{
+    display: none;
+}
 
 #thirdContainer{
     padding-top: 100px;
@@ -240,23 +245,162 @@ p{
     font-size: 24px;
 
 }
+
 .feedBack p{
     color: #9197ac;
     padding: 10px 22px;
-}
+}                      
 
 #secBackground{
     position: absolute;
     width: 600px;
-    height: 600px;
-    right: 198;
-    top: 365;
+    height: 700px;
+    right: 280px;
     z-index: -6;
+    margin-top: 70px;
 }
 
-@media screen and (max-width: 767px){                                                         
-   /*Add margin- bottom to the firstPart1 to keep the background photo*/
+
+@media screen and (max-width: 1000px){                                                         
+    /*Add margin- bottom to the firstPart1 to keep the background photo*/
+    body{
+        font-family: 'Be Vietnam';
+        color: #242d52;
+        /*color: #242d52;*/
+    }
+
+     .container{
+         display: grid; 
+         grid-template-columns: auto;  
+     }           
+ 
+     #firstPart2{
+         width: 100%;
+         text-align: center;
+     }   
+     #firstPart2Title{    
+         color: #242d52; 
+         margin: 25px 0;
+         font-size: 40px;
+         width: 60%;
+         margin : 0 auto;
+         font-weight: bolder;
+     }
+     
+     #difference{
+         width: 70%;
+         margin: 0 auto;
+         margin-top: 15px;
+         color: #9197ac;
+         line-height: 36px;
+         font-size: 20px;
+         margin-bottom: 80px;
+     }    
+ 
+     #secPart2{
+         width:100%;
+     }
+     
+     .description{
+         margin: 25px 20px;
+     }
+ 
+     .description h3{
+         margin: 25px 0 15px;
+         color: #242d52;
+         background-color: #fff0eb;
+         padding: 5px 0;
+     }
+     
+     .description p{
+         margin: 25px 0 60px;
+         width:100%;
+         color: #9197ac;
+         line-height: 35px;
+     }
+     
+     .description h3::before{
+         background-color: #ee6339;
+         content: '01';
+         position: relative;
+         /*left: 0;*/
+         border-radius: 2rem;
+         padding: 7.5px 24px;
+         left: -50px;
+         bottom: 1px;                                     
+         color: white;
+         font-size: 16px;
+     }
     
+     .description:nth-child(2) h3::before{
+        content: '02';   
+    }
+    
+    .description:last-child h3::before{
+        content: '03';   
+    }
+      
+     .description::before{
+         display:none;
+     }              
+     
+     #thirdContainer{
+         padding-top: 100px;
+         text-align: center;
+         width: 100%;
+         margin: 0 auto;
+     }
+     
+     #thirdTitle{
+         color: #242d52;
+         font-size: 45px;
+     }
+     
+     #feedBackContainer{
+         display: flex;
+         padding-top: 110px;
+         /*justify-content: space-evenly;*/
+     }
+     
+     .feedBack{
+         width: 90%;
+         background-color: #fafafa;
+         text-align: center;
+         margin: 0 20px;
+         padding-bottom: 10px;
+     }
+     
+     .feedBack img{
+         position: relative;
+         top: -30px;
+         width: 80px;
+         height: 80px;
+     }
+     
+     .names{
+         color: #242d52;
+         font-size: 24px;
+     
+     }
+     .feedBack p{
+         color: #9197ac;
+         padding: 10px 22px;
+     }
+ 
+     #thirdContainer button{
+         margin-top: 20px;
+     } 
+    }
+
+
+@media screen and (max-width: 767px){    
+    /*Add margin- bottom to the firstPart1 to keep the background photo*/
+   body{
+    font-family: 'Be Vietnam';
+    color: #242d52;
+    /*color: #242d52;*/
+    }
+
     .container{
         display: grid; 
         grid-template-columns: auto;  
@@ -297,7 +441,7 @@ p{
     .description h3{
         margin: 25px 0 15px;
         color: #242d52;
-        background-color: #fff0eb;
+       background-color: #fff0eb;
         padding: 5px 0;
     }
     
@@ -312,7 +456,6 @@ p{
         background-color: #ee6339;
         content: '01';
         position: relative;
-        /*left: 0;*/
         border-radius: 2rem;
         padding: 7.5px 24px;
         left: -50px;
@@ -320,66 +463,96 @@ p{
         color: white;
         font-size: 16px;
     }
-    .description:nth-child(2)::before{
+    
+    .description:nth-child(2) h3::before{
         content: '02';   
     }
     
-    .description h3:nth-child(3)::before{
+    .description:last-child h3::before{
         content: '03';   
     }
-    .description::before{
-        display:none;
-    }              
-    
-    #thirdContainer{
-        padding-top: 100px;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
+            
+    #secBackground, #firstBackground{
+        display: none;
     }
-    
+
+    /*Third Container(the thirdPart from the page)*/
+    #thirdContainer{
+        text-align: center;  
+        padding-top: 100px;
+    }
+
     #thirdTitle{
+        margin: 20px 0;
         color: #242d52;
         font-size: 45px;
-    }
-    
+    } 
+
+    /*FeedBack start */   
     #feedBackContainer{
+        padding-top: 110px; 
         display: flex;
-        padding-top: 110px;
-        /*justify-content: space-evenly;*/
+        align-items: center;   
     }
     
     .feedBack{
-        width: 90%;
+        display: block;
         background-color: #fafafa;
         text-align: center;
-        margin: 0 20px;
+        margin:0 7.5vw;
         padding-bottom: 10px;
-    }
-    
-    .feedBack img{
-        position: relative;
-        top: -30px;
-        width: 80px;
-        height: 80px;
-    }
-    
-    .names{
-        color: #242d52;
-        font-size: 24px;
-    
-    }
-    .feedBack p{
-        color: #9197ac;
-        padding: 10px 22px;
+        width: 100%;
+        transition: 1.5s;  
     }
 
-    #thirdContainer button{
-        margin-top: 20px;
-    } 
+    .feedBack p{
+        padding-top: 15px;
+        width: 80vw;
+        line-height: 35px;
+    }
+    /*FeedBack end (from the thirdPartContainer)*/   
+
+    /*Manual buttons start*/     
+    #thirdContainer input{
+        display: none;
+    }
+
+    #feedBackBtns{   
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manualBtn{
+        border: 3px solid #ee6339;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+        margin-right: 40px;
+    }
+    
+    .manualBtn:hover{
+        background: #ee6339;
+    }
+
+    #AnishasBtn:checked ~ .firstFeedBack{
+        margin-left: 0;
+    }
+    
+    #AlisBtn:checked ~ .firstFeedBack{
+        margin-left: -100%;
+    }
+    
+    #RichardsBtn:checked ~ .firstFeedBack{
+        margin-left: -200%;
+    }
+    /*Manual buttons end*/ 
+    /*Third Container end(the thirdPart from the page)*/
 
 }
 
+       
 .startButton{
     color:#ffffff;
     background-color: #ee6339;
@@ -397,10 +570,12 @@ p{
     color: #ee6339;
     background-color: #ffffff;
     border: none;
-    padding: 15px 25px;
+    padding: 18px 29px;
     border-radius: 5rem;
     cursor: pointer;
     margin-top: 80px;
+    position: absolute;
+    right: 0;                                   
 }
 
 #firstFooter{
@@ -414,11 +589,6 @@ p{
     overflow: hidden;
     display: flex;
     position: relative;
-}
-#firstFooterContent{
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
 }
 
 #firstFooter img:nth-child(1){
@@ -435,8 +605,8 @@ p{
     height: 600px;
     opacity: 10%;
     position: absolute;
-    right: -371px;
-    bottom: 62px;
+    right: -381px;
+    bottom: 40px;
 
 }
 
@@ -553,4 +723,4 @@ label{
        padding-top: 130px;
        padding-left: 40px;
    }
-
+                                
