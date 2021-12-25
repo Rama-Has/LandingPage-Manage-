@@ -261,139 +261,8 @@ p{
 }
 
 
-@media screen and (max-width: 1000px){                                                         
-    /*Add margin- bottom to the firstPart1 to keep the background photo*/
-    body{
-        font-family: 'Be Vietnam';
-        color: #242d52;
-        /*color: #242d52;*/
-    }
 
-     .container{
-         display: grid; 
-         grid-template-columns: auto;  
-     }           
- 
-     #firstPart2{
-         width: 100%;
-         text-align: center;
-     }   
-     #firstPart2Title{    
-         color: #242d52; 
-         margin: 25px 0;
-         font-size: 40px;
-         width: 60%;
-         margin : 0 auto;
-         font-weight: bolder;
-     }
-     
-     #difference{
-         width: 70%;
-         margin: 0 auto;
-         margin-top: 15px;
-         color: #9197ac;
-         line-height: 36px;
-         font-size: 20px;
-         margin-bottom: 80px;
-     }    
- 
-     #secPart2{
-         width:100%;
-     }
-     
-     .description{
-         margin: 25px 20px;
-     }
- 
-     .description h3{
-         margin: 25px 0 15px;
-         color: #242d52;
-         background-color: #fff0eb;
-         padding: 5px 0;
-     }
-     
-     .description p{
-         margin: 25px 0 60px;
-         width:100%;
-         color: #9197ac;
-         line-height: 35px;
-     }
-     
-     .description h3::before{
-         background-color: #ee6339;
-         content: '01';
-         position: relative;
-         /*left: 0;*/
-         border-radius: 2rem;
-         padding: 7.5px 24px;
-         left: -50px;
-         bottom: 1px;                                     
-         color: white;
-         font-size: 16px;
-     }
-    
-     .description:nth-child(2) h3::before{
-        content: '02';   
-    }
-    
-    .description:last-child h3::before{
-        content: '03';   
-    }
-      
-     .description::before{
-         display:none;
-     }              
-     
-     #thirdContainer{
-         padding-top: 100px;
-         text-align: center;
-         width: 100%;
-         margin: 0 auto;
-     }
-     
-     #thirdTitle{
-         color: #242d52;
-         font-size: 45px;
-     }
-     
-     #feedBackContainer{
-         display: flex;
-         padding-top: 110px;
-         /*justify-content: space-evenly;*/
-     }
-     
-     .feedBack{
-         width: 90%;
-         background-color: #fafafa;
-         text-align: center;
-         margin: 0 20px;
-         padding-bottom: 10px;
-     }
-     
-     .feedBack img{
-         position: relative;
-         top: -30px;
-         width: 80px;
-         height: 80px;
-     }
-     
-     .names{
-         color: #242d52;
-         font-size: 24px;
-     
-     }
-     .feedBack p{
-         color: #9197ac;
-         padding: 10px 22px;
-     }
- 
-     #thirdContainer button{
-         margin-top: 20px;
-     } 
-    }
-
-
-@media screen and (max-width: 767px){    
+@media screen and (max-width: 1000px){    
     /*Add margin- bottom to the firstPart1 to keep the background photo*/
    body{
     font-family: 'Be Vietnam';
@@ -476,6 +345,9 @@ p{
         display: none;
     }
 
+    .description::before{
+        display: none;
+    }
     /*Third Container(the thirdPart from the page)*/
     #thirdContainer{
         text-align: center;  
