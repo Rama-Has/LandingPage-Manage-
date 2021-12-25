@@ -7,10 +7,9 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: 'Be Vietnam';
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     color: #242d52;
     /*color: #242d52;*/
 }
@@ -52,7 +51,7 @@ text-decoration: none;
     padding-left: 20%;
 }
 */
-               
+
 #firstBackground{
     position: absolute;
     width: 600px;
@@ -77,6 +76,7 @@ text-decoration: none;
     position: sticky; 
     top: 0;
     z-index: 100;
+    background-color: white;
 }
 
 #menu{
@@ -198,11 +198,7 @@ p{
 
 #thirdContainer button{
     margin-top: 20px;
-}
-
-#thirdContainer input{
-    display: none;
-}
+}               
 
 #thirdContainer{
     padding-top: 100px;
@@ -245,30 +241,228 @@ p{
     font-size: 24px;
 
 }
-
 .feedBack p{
     color: #9197ac;
     padding: 10px 22px;
-}                      
+}
 
 #secBackground{
     position: absolute;
     width: 600px;
-    height: 700px;
-    right: 280px;
+    height: 600px;
+    right: 198;
+    top: 365;
     z-index: -6;
-    margin-top: 70px;
 }
 
+.startButton{
+    color:#ffffff;
+    background-color: #ee6339;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+}
 
-@media screen and (max-width: 1000px){                                                         
-    /*Add margin- bottom to the firstPart1 to keep the background photo*/
-    body{
-        font-family: 'Be Vietnam';
-        color: #242d52;
-        /*color: #242d52;*/
+.startButton:hover{
+    box-shadow: 0 0 15px 0 #ee6339;
+}
+
+#startButton3{
+    color: #ee6339;
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+#firstFooter{
+/*background : url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");*/
+    background-color: #ee6339;
+   /* width:100%;*/
+    margin-top: 120px; 
+    color: #ffffff;
+    padding: 20px 7.5% 20px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+}
+
+#firstFooter img:nth-child(1){
+    width: 584px;                            
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    top: -39px;
+    left: 76px;
+}
+
+#secPart3 + img{
+    width:600px;
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    right: -371px;
+    bottom: 62px;
+
+}
+
+#firstFooter h1 {
+    line-height: 40px;
+    position: relative;
+    left: 0;
+}
+
+#firstPart3{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#secPart3{
+    position: relative;
+    width: 40%;
+}
+
+#dots{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#dots2{
+    flex-direction: column;
+    display: flex;
+    gap:5px;
+}
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+                                  
+#allDots{
+      margin-top: 15px;
+      display: flex;
+      gap:5px;
     }
 
+#secFooter{
+    width: 100%;
+    display: flex;
+    background-color: #23242e;
+    padding-bottom: 50px;
+}
+
+.logo{
+    gap:10px;
+    display: flex;
+    flex-direction:row ;
+}
+  
+  #menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+    line-height:35px ;
+  }
+  
+  #menuFooter{
+      display: flex;
+      flex-direction: row;
+      gap:40px;
+      padding-left: 30px;
+      padding-top: 60px;
+  }
+  
+  #secFooter .logo{
+      padding-bottom: 100px;
+  }
+  
+  #firstPart4 {
+      padding-left:270px;
+      padding-top:40px ;
+      padding-right: 200px;
+  }
+  
+  #secFooter img {
+      width: 25px;
+      height: 25px;
+  }
+
+  #menuColumn1{
+   display: flex;
+   flex-direction: column;
+}
+
+#menuColumn2{
+    display: flex;
+    flex-direction: column;
+}
+
+#menuFooter a:hover{
+color: #ee6339;      
+}
+#firstPart3 h1{
+font-size: 45px;
+line-height:50px ;
+}
+label{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
+}
+                                               
+#secPart4{
+       padding-top:90px;
+       padding-left: 150px;
+}
+
+#copyright{
+       color: #7b716b;
+       padding-left: 68%;
+       padding-bottom: 80px;
+}
+
+   @media screen and (max-width: 767px){                                                         
+    .icon{
+        width: 35px;
+        height: 5px;
+        background-color: #242d52;
+        margin: 6px 0;
+      }
+      #navBar {
+        display: flex;
+        position: relative;
+      }
+      #icons{
+        position: absolute;
+        right: 0;
+      }
+    #firstPart{
+        width: 100%;
+        padding-left: 10%;
+        padding-bottom: 20%;
+    }
+    #secPart img{
+    padding-left: 10%;
+    }
+    
+    #Fcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #PhoneMenu{
+        top:-200px;
+       }
+    /*Add margin- bottom to the firstPart1 to keep the background photo*/
+     
      .container{
          display: grid; 
          grid-template-columns: auto;  
@@ -277,7 +471,8 @@ p{
      #firstPart2{
          width: 100%;
          text-align: center;
-     }   
+     }
+     
      #firstPart2Title{    
          color: #242d52; 
          margin: 25px 0;
@@ -331,15 +526,13 @@ p{
          color: white;
          font-size: 16px;
      }
-    
-     .description:nth-child(2) h3::before{
-        content: '02';   
-    }
-    
-    .description:last-child h3::before{
-        content: '03';   
-    }
-      
+     .description:nth-child(2)::before{
+         content: '02';   
+     }
+     
+     .description h3:nth-child(3)::before{
+         content: '03';   
+     }
      .description::before{
          display:none;
      }              
@@ -390,337 +583,38 @@ p{
      #thirdContainer button{
          margin-top: 20px;
      } 
-    }
+     #firstFooter{
+            margin-top: 120px; 
+            padding: 20px 7.5% 20px;
+            height: 270px;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
 
-
-@media screen and (max-width: 767px){    
-    /*Add margin- bottom to the firstPart1 to keep the background photo*/
-   body{
-    font-family: 'Be Vietnam';
-    color: #242d52;
-    /*color: #242d52;*/
-    }
-
-    .container{
-        display: grid; 
-        grid-template-columns: auto;  
-    }           
-
-    #firstPart2{
-        width: 100%;
-        text-align: center;
-    }
-    
-    #firstPart2Title{    
-        color: #242d52; 
-        margin: 25px 0;
-        font-size: 40px;
-        width: 60%;
-        margin : 0 auto;
-        font-weight: bolder;
-    }
-    
-    #difference{
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 15px;
-        color: #9197ac;
-        line-height: 36px;
-        font-size: 20px;
-        margin-bottom: 80px;
-    }    
-
-    #secPart2{
-        width:100%;
-    }
-    
-    .description{
-        margin: 25px 20px;
-    }
-
-    .description h3{
-        margin: 25px 0 15px;
-        color: #242d52;
-       background-color: #fff0eb;
-        padding: 5px 0;
-    }
-    
-    .description p{
-        margin: 25px 0 60px;
-        width:100%;
-        color: #9197ac;
-        line-height: 35px;
-    }
-    
-    .description h3::before{
-        background-color: #ee6339;
-        content: '01';
-        position: relative;
-        border-radius: 2rem;
-        padding: 7.5px 24px;
-        left: -50px;
-        bottom: 1px;                                     
-        color: white;
-        font-size: 16px;
-    }
-    
-    .description:nth-child(2) h3::before{
-        content: '02';   
-    }
-    
-    .description:last-child h3::before{
-        content: '03';   
-    }
-            
-    #secBackground, #firstBackground{
-        display: none;
-    }
-
-    /*Third Container(the thirdPart from the page)*/
-    #thirdContainer{
-        text-align: center;  
-        padding-top: 100px;
-    }
-
-    #thirdTitle{
-        margin: 20px 0;
-        color: #242d52;
-        font-size: 45px;
-    } 
-
-    /*FeedBack start */   
-    #feedBackContainer{
-        padding-top: 110px; 
+        #copyright{
+            position: absolute;
+            top: 60px;
+        }
+      
+      #miniFooter{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      #menuFooter{
+          padding-left: 30%;
+      }
+    #socialMedia{
         display: flex;
-        align-items: center;   
+        flex-direction: row;
+        padding-bottom: 20px;
     }
-    
-    .feedBack{
-        display: block;
-        background-color: #fafafa;
-        text-align: center;
-        margin:0 7.5vw;
-        padding-bottom: 10px;
-        width: 100%;
-        transition: 1.5s;  
-    }
-
-    .feedBack p{
-        padding-top: 15px;
-        width: 80vw;
-        line-height: 35px;
-    }
-    /*FeedBack end (from the thirdPartContainer)*/   
-
-    /*Manual buttons start*/     
-    #thirdContainer input{
-        display: none;
-    }
-
-    #feedBackBtns{   
-        margin-top: -40px;
+    #manageAndsocial{
         display: flex;
-        justify-content: center;
+        flex-direction: column-reverse;
+        
     }
-
-    .manualBtn{
-        border: 3px solid #ee6339;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 10px;
-        transition: 1s;
-        margin-right: 40px;
-    }
-    
-    .manualBtn:hover{
-        background: #ee6339;
-    }
-
-    #AnishasBtn:checked ~ .firstFeedBack{
-        margin-left: 0;
-    }
-    
-    #AlisBtn:checked ~ .firstFeedBack{
-        margin-left: -100%;
-    }
-    
-    #RichardsBtn:checked ~ .firstFeedBack{
-        margin-left: -200%;
-    }
-    /*Manual buttons end*/ 
-    /*Third Container end(the thirdPart from the page)*/
-
-}
-
-       
-.startButton{
-    color:#ffffff;
-    background-color: #ee6339;
-    border: none;
-    padding: 15px 25px;
-    border-radius: 5rem;
-    cursor: pointer;
-}
-
-.startButton:hover{
-    box-shadow: 0 0 15px 0 #ee6339;
-}
-
-#startButton3{
-    color: #ee6339;
-    background-color: #ffffff;
-    border: none;
-    padding: 18px 29px;
-    border-radius: 5rem;
-    cursor: pointer;
-    margin-top: 80px;
-    position: absolute;
-    right: 0;                                   
-}
-
-#firstFooter{
-/*background : url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");*/
-    background-color: #ee6339;
-   /* width:100%;*/
-    margin-top: 120px; 
-    color: #ffffff;
-    padding: 20px 7.5% 20px;
-    height: 150px;
-    overflow: hidden;
-    display: flex;
-    position: relative;
-}
-
-#firstFooter img:nth-child(1){
-    width: 584px;                            
-    height: 600px;
-    opacity: 10%;
-    position: absolute;
-    top: -39px;
-    left: 76px;
-}
-
-#secPart3 + img{
-    width:600px;
-    height: 600px;
-    opacity: 10%;
-    position: absolute;
-    right: -381px;
-    bottom: 40px;
-
-}
-
-#firstFooter h1 {
-    line-height: 40px;
-    position: relative;
-    left: 0;
-}
-
-#firstPart3{
-    width: 50%;
-}
-
-#secPart3{
-    position: relative;
-    width: 40%;
-}
-
-#dots{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-#dots2{
-    flex-direction: column;
-    display: flex;
-    gap:5px;
-}
-.dot {
-    height: 6px;
-    width: 6px;
-    background-color: #bbb;
-    border-radius: 50%;
-}
-                                  
-#allDots{
-      margin-top: 15px;
-      display: flex;
-      gap:5px;
-    }
-
-#secFooter{
-    width: 100%;
-    display: flex;
-    background-color: #1d1e25;
-    padding-bottom: 50px;
-}
-
-.logo{
-    gap:10px;
-    display: flex;
-    flex-direction:row ;
-}
-  
-  #menuFooter a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: small;
-    line-height:35px ;
-  }
-  
-  #menuFooter{
-      display: flex;
-      flex-direction: row;
-      gap:40px;
-      padding-left: 30px;
-      padding-top: 60px;
-  }
-  
-  #secFooter .logo{
-      padding-bottom: 100px;
-  }
-  
-  #firstPart4 {
-      padding-left:270px;
-      padding-top:40px ;
-      padding-right: 200px;
-  }
-  
-  #secFooter img {
-      width: 25px;
-      height: 25px;
-  }
-
-  #menuColumn1{
-   display: flex;
-   flex-direction: column;
-}
-
-#menuColumn2{
-    display: flex;
-    flex-direction: column;
-}
-
-#menuFooter a:hover{
-color: #ee6339;      
-}
-
-label{
-    background-color: #ffffff;
-    padding: 10px 17px;
-    border-radius: 5rem;
-    cursor: pointer;
-    margin-top: 80px;
-}
-                                               
-#secPart4{
-       padding-top:90px;
-       padding-left: 150px;
-    }
-
-#copyright{
-       color: #7b716b;
-       padding-top: 130px;
-       padding-left: 40px;
-   }
-                                
+ }
