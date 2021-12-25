@@ -556,4 +556,82 @@ p{
         margin-top: 80px;
            padding-top:90px;
            padding-left: 150px;
-    }                       
+    }  
+    @media screen and (max-width: 767px){                                                         
+        .icon{
+         width: 35px;
+         height: 5px;
+         background-color: #242d52;
+         margin: 6px 0;
+        }
+        #navBar {
+         display: flex;
+         position: relative;
+        }
+         #icons{
+            position: absolute;
+            right: 0;
+          }
+        #firstPart{
+            width: 100%;
+            padding-left: 10%;
+            padding-bottom: 20%;
+        }
+        #secPart img{
+        padding-left: 10%;
+        }
+        
+        #Fcontainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        
+        #firstFooter{
+            margin-top: 120px; 
+            height: 270px;
+            overflow: hidden;
+            padding-top: 50px;
+            flex-direction: column;
+            
+        }
+        
+        #copyright{
+            position: absolute;
+            top: 60px;
+        }
+        
+        #menuFooter{
+          padding-left: 35%;
+          gap:15%
+        }
+        #socialMedia{
+        flex-direction: row;
+        padding-bottom: 20px;
+        
+        }
+        .social{
+        padding-left: 20%;
+        }
+        #secFooter{
+            flex-direction: column-reverse;
+        }
+        #menuAndsec{
+            flex-direction: column-reverse;
+        } 
+        #firstPart4 .logo{
+        padding-left: 40%;
+        padding-top: 20px;
+        }
+        #firstPart4{
+            padding-left: 15%;
+            padding-right: 20%;
+            display: flex;
+            flex-direction: column-reverse;
+        
+        }
+        #secPart4 label{
+            padding-right: 20%;
+        }
+        
+        }                     
