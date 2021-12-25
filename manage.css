@@ -14,6 +14,44 @@ body{
     color: #242d52;
     /*color: #242d52;*/
 }
+/*
+}
+body{
+    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    font-family: 'Be Vietnam';
+     background-position:-380px 300px;
+    color: #242d52;
+}
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top:40px;
+    margin-left: 40px;
+   position: relative; 
+}
+a{
+color: #242d52;
+text-decoration: none;
+}
+#navbarD{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: sticky;
+    padding: 20px 0;
+    top: 0;
+    background-color: white;
+    z-index: 1500;
+}
+#menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
+}
+*/
                
 #firstBackground{
     position: absolute;
@@ -39,6 +77,7 @@ body{
     position: sticky; 
     top: 0;
     z-index: 100;
+    background-color: white;
 }
 
 #menu{
@@ -69,8 +108,8 @@ text-decoration: none;
 #firstPart{
 font-size:30px;
 margin-top: 40px;
-padding-left: 26px;
-width: 40%;
+padding-left: 10%;
+width: 30%;
 }
 
 h1{
@@ -221,170 +260,13 @@ p{
     z-index: -6;
     margin-top: 70px;
 }
-
-@media screen and (max-width: 1000px){    
-    /*Add margin- bottom to the firstPart1 to keep the background photo*/
-   body{
-    font-family: 'Be Vietnam';
-    color: #242d52;
-    /*color: #242d52;*/
-    }
-
-    .container{
-        display: grid; 
-        grid-template-columns: auto;  
-    }           
-
-    #firstPart2{
-        width: 100%;
-        text-align: center;
-    }
-    
-    #firstPart2Title{    
-        color: #242d52; 
-        margin: 25px 0;
-        font-size: 40px;
-        width: 60%;
-        margin : 0 auto;
-        font-weight: bolder;
-    }
-    
-    #difference{
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 15px;
-        color: #9197ac;
-        line-height: 36px;
-        font-size: 20px;
-        margin-bottom: 80px;
-    }    
-
-    #secPart2{
-        width:100%;
-    }
-    
-    .description{
-        margin: 25px 20px;
-    }
-
-    .description h3{
-        margin: 25px 0 15px;
-        color: #242d52;
-       background-color: #fff0eb;
-        padding: 5px 0;
-    }
-    
-    .description p{
-        margin: 25px 0 60px;
-        width:100%;
-        color: #9197ac;
-        line-height: 35px;
-    }
-    
-    .description h3::before{
-        background-color: #ee6339;
-        content: '01';
-        position: relative;
-        border-radius: 2rem;
-        padding: 7.5px 24px;
-        left: -50px;
-        bottom: 1px;                                     
-        color: white;
-        font-size: 16px;
-    }
-    
-    .description:nth-child(2) h3::before{
-        content: '02';   
-    }
-    
-    .description:last-child h3::before{
-        content: '03';   
-    }
-            
-    #secBackground, #firstBackground{
-        display: none;
-    }
-
-    /*Third Container(the thirdPart from the page)*/
-    #thirdContainer{
-        text-align: center;  
-        padding-top: 100px;
-    }
-
-    #thirdTitle{
-        margin: 20px 0;
-        color: #242d52;
-        font-size: 45px;
-    } 
-
-    /*FeedBack start */   
-    #feedBackContainer{
-        padding-top: 110px; 
-        display: flex;
-        align-items: center;   
-    }
-    
-    .feedBack{
-        display: block;
-        background-color: #fafafa;
-        text-align: center;
-        margin:0 7.5vw;
-        padding-bottom: 10px;
-        width: 100%;
-        transition: 1.5s;  
-    }
-
-    .feedBack p{
-        padding-top: 15px;
-        width: 80vw;
-        line-height: 35px;
-    }
-    /*FeedBack end (from the thirdPartContainer)*/   
-
-    /*Manual buttons start*/     
-    #thirdContainer input{
-        display: none;
-    }
-
-    #feedBackBtns{   
-        margin-top: -40px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .manualBtn{
-        border: 3px solid #ee6339;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 10px;
-        transition: 1s;
-        margin-right: 40px;
-    }
-    
-    .manualBtn:hover{
-        background: #ee6339;
-    }
-
-    #AnishasBtn:checked ~ .firstFeedBack{
-        margin-left: 0;
-    }
-    
-    #AlisBtn:checked ~ .firstFeedBack{
-        margin-left: -100%;
-    }
-    
-    #RichardsBtn:checked ~ .firstFeedBack{
-        margin-left: -200%;
-    }
-    /*Manual buttons end*/ 
-    /*Third Container end(the thirdPart from the page)*/
-
-}
-
 .manualBtn{
     display: none;
 }
-       
+  #menuAndsec{
+      display: flex;
+      flex-direction: row;
+  }     
 .startButton{
     color:#ffffff;
     background-color: #ee6339;
@@ -444,19 +326,19 @@ p{
 
 #firstFooter h1 {
     line-height: 40px;
+    padding-top: 20px;
     position: relative;
-    left: 0;
 }
-
 #firstPart3{
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #secPart3{
     position: relative;
     width: 40%;
 }
-
 #dots{
     display: flex;
     flex-direction: column;
@@ -479,14 +361,28 @@ p{
       display: flex;
       gap:5px;
     }
-
 #secFooter{
-    width: 100%;
-    display: flex;
-    background-color: #23242e;
-    padding-bottom: 50px;
+width: 100%;
+display: flex;
+}
+#footer{
+    background-color: #23242e;   
+}
+#firstPart4 {
+padding-left:240px;
+padding-top:40px ;
+padding-right: 150px;
 }
 
+#secFooter img {
+width: 35px;
+height: 35px;
+}
+#menuColumn1{
+display: flex;
+flex-direction: column;
+
+}
 .logo{
     gap:10px;
     display: flex;
@@ -503,8 +399,7 @@ p{
   #menuFooter{
       display: flex;
       flex-direction: row;
-      gap:40px;
-      padding-left: 30px;
+      gap:80%;
       padding-top: 60px;
   }
   
@@ -512,126 +407,279 @@ p{
       padding-bottom: 100px;
   }
   
-  #firstPart4 {
-      padding-left:270px;
-      padding-top:40px ;
-      padding-right: 200px;
-  }
-  
-  #secFooter img {
-      width: 25px;
-      height: 25px;
-  }
-
-  #menuColumn1{
-   display: flex;
-   flex-direction: column;
-}
-
 #menuColumn2{
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
-
 #menuFooter a:hover{
     color: #ee6339;      
     }
-
-    #firstPart3{
-        width: 70%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #firstPart3 h1{
+    
+#firstPart3 h1{
     font-size: 45px;
     line-height:50px ;
     }
+label{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
+}
 
-    label{
-        background-color: #ffffff;
-        padding: 10px 25px;
-        border-radius: 5rem;
+#secPart4{
+    padding-top:90px;
+    padding-left: 170px;
+}
+#copyright{
+color: #7b716b;
+padding-left: 60%;
+
+}
+#socialMedia{
+    display: flex;
+    flex-direction: row;
+}
+#socialMedia img{
+    width: 25px;
+    height: 25px;
+}
+.social{
+    padding-left: 10%;
+    }
+@media screen and (max-width: 767px){                                                         
+.icon{
+ width: 35px;
+ height: 5px;
+ background-color: #242d52;
+ margin: 6px 0;
+}
+#navBar {
+ display: flex;
+ position: relative;
+}
+ #icons{
+    position: absolute;
+    right: 0;
+  }
+#firstPart{
+    width: 100%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+}
+#secPart img{
+padding-left: 10%;
+}
+
+#Fcontainer{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+#firstFooter{
+    margin-top: 120px; 
+    height: 270px;
+    overflow: hidden;
+    padding-top: 50px;
+    flex-direction: column;
+    
+}
+
+#copyright{
+    position: absolute;
+    top: 60px;
+}
+
+#menuFooter{
+  padding-left: 35%;
+  gap:15%
+}
+#socialMedia{
+flex-direction: row;
+padding-bottom: 20px;
+
+}
+.social{
+padding-left: 20%;
+}
+#secFooter{
+    flex-direction: column-reverse;
+}
+#menuAndsec{
+    flex-direction: column-reverse;
+} 
+#firstPart4 .logo{
+padding-left: 40%;
+padding-top: 20px;
+}
+#firstPart4{
+    padding-left: 15%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+#secPart4 label{
+    padding-right: 20%;
+}
+
+}
+@media screen and (max-width: 1000px){    
+    /*Add margin- bottom to the firstPart1 to keep the background photo*/
+   body{
+    font-family: 'Be Vietnam';
+    color: #242d52;
+    /*color: #242d52;*/
+    }
+
+    .container{
+        display: grid; 
+        grid-template-columns: auto;  
+    }           
+
+    #firstPart2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #firstPart2Title{    
+        color: #242d52; 
+        margin: 25px 0;
+        font-size: 40px;
+        width: 60%;
+        margin : 0 auto;
+        font-weight: bolder;
+    }
+
+    #difference{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 15px;
+        color: #9197ac;
+        line-height: 36px;
+        font-size: 20px;
+        margin-bottom: 80px;
+    }    
+
+    #secPart2{
+        width:100%;
+    }
+
+    .description{
+        margin: 25px 20px;
+    }
+
+    .description h3{
+        margin: 25px 0 15px;
+        color: #242d52;
+       background-color: #fff0eb;
+        padding: 5px 0;
+    }
+
+    .description p{
+        margin: 25px 0 60px;
+        width:100%;
+        color: #9197ac;
+        line-height: 35px;
+    }
+
+    .description h3::before{
+        background-color: #ee6339;
+        content: '01';
+        position: relative;
+        border-radius: 2rem;
+        padding: 7.5px 24px;
+        left: -50px;
+        bottom: 1px;                                     
+        color: white;
+        font-size: 16px;
+    }
+
+    .description:nth-child(2) h3::before{
+        content: '02';   
+    }
+
+    .description:last-child h3::before{
+        content: '03';   
+    }
+
+    #secBackground, #firstBackground{
+        display: none;
+    }
+
+    /*Third Container(the thirdPart from the page)*/
+    #thirdContainer{
+        text-align: center;  
+        padding-top: 100px;
+    }
+
+    #thirdTitle{
+        margin: 20px 0;
+        color: #242d52;
+        font-size: 45px;
+    } 
+
+    /*FeedBack start */   
+    #feedBackContainer{
+        padding-top: 110px; 
+        display: flex;
+        align-items: center;   
+    }
+
+    .feedBack{
+        display: block;
+        background-color: #fafafa;
+        text-align: center;
+        margin:0 7.5vw;
+        padding-bottom: 10px;
+        width: 100%;
+        transition: 1.5s;  
+    }
+
+    .feedBack p{
+        padding-top: 15px;
+        width: 80vw;
+        line-height: 35px;
+    }
+    /*FeedBack end (from the thirdPartContainer)*/   
+
+    /*Manual buttons start*/     
+    #thirdContainer input{
+        display: none;
+    }
+
+    #feedBackBtns{   
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manualBtn{
+        border: 3px solid #ee6339;
         cursor: pointer;
-        margin-top: 80px;
-           padding-top:90px;
-           padding-left: 150px;
-    }  
-    @media screen and (max-width: 767px){                                                         
-        .icon{
-         width: 35px;
-         height: 5px;
-         background-color: #242d52;
-         margin: 6px 0;
-        }
-        #navBar {
-         display: flex;
-         position: relative;
-        }
-         #icons{
-            position: absolute;
-            right: 0;
-          }
-        #firstPart{
-            width: 100%;
-            padding-left: 10%;
-            padding-bottom: 20%;
-        }
-        #secPart img{
-        padding-left: 10%;
-        }
-        
-        #Fcontainer{
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        
-        
-        #firstFooter{
-            margin-top: 120px; 
-            height: 270px;
-            overflow: hidden;
-            padding-top: 50px;
-            flex-direction: column;
-            
-        }
-        
-        #copyright{
-            position: absolute;
-            top: 60px;
-        }
-        
-        #menuFooter{
-          padding-left: 35%;
-          gap:15%
-        }
-        #socialMedia{
-        flex-direction: row;
-        padding-bottom: 20px;
-        
-        }
-        .social{
-        padding-left: 20%;
-        }
-        #secFooter{
-            flex-direction: column-reverse;
-        }
-        #menuAndsec{
-            flex-direction: column-reverse;
-        } 
-        #firstPart4 .logo{
-        padding-left: 40%;
-        padding-top: 20px;
-        }
-        #firstPart4{
-            padding-left: 15%;
-            padding-right: 20%;
-            display: flex;
-            flex-direction: column-reverse;
-        
-        }
-        #secPart4 label{
-            padding-right: 20%;
-        }
-        
-        }                     
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+        margin-right: 40px;
+    }
+
+    .manualBtn:hover{
+        background: #ee6339;
+    }
+
+    #AnishasBtn:checked ~ .firstFeedBack{
+        margin-left: 0;
+    }
+
+    #AlisBtn:checked ~ .firstFeedBack{
+        margin-left: -100%;
+    }
+
+    #RichardsBtn:checked ~ .firstFeedBack{
+        margin-left: -200%;
+    }
+    /*Manual buttons end*/ 
+    /*Third Container end(the thirdPart from the page)*/
+
+}
