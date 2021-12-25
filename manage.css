@@ -198,7 +198,11 @@ p{
 
 #thirdContainer button{
     margin-top: 20px;
-}               
+}
+
+#thirdContainer input{
+    display: none;
+}
 
 #thirdContainer{
     padding-top: 100px;
@@ -255,6 +259,8 @@ p{
     z-index: -6;
     margin-top: 70px;
 }
+
+
 @media screen and (max-width: 1000px){                                                         
     /*Add margin- bottom to the firstPart1 to keep the background photo*/
     body{
@@ -387,8 +393,8 @@ p{
     }
 
 
-@media screen and (max-width: 767px){                                                         
-   /*Add margin- bottom to the firstPart1 to keep the background photo*/
+@media screen and (max-width: 767px){    
+    /*Add margin- bottom to the firstPart1 to keep the background photo*/
    body{
     font-family: 'Be Vietnam';
     color: #242d52;
@@ -470,78 +476,83 @@ p{
         display: none;
     }
 
+    /*Third Container(the thirdPart from the page)*/
     #thirdContainer{
         text-align: center;  
         padding-top: 100px;
     }
 
     #thirdTitle{
+        margin: 20px 0;
         color: #242d52;
         font-size: 45px;
     } 
-    
+
+    /*FeedBack start */   
     #feedBackContainer{
-        padding-top: 110px;
+        padding-top: 110px; 
+        display: flex;
+        align-items: center;   
     }
     
     .feedBack{
         display: block;
-        width: 80%;
-        background-color: gray;
-        text-align: center;
-        margin: 0 auto;
-        padding-bottom: 10px;
-    }
-
-   /*
-    #thirdContainer{
-        padding-top: 100px;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    #thirdTitle{
-        color: #242d52;
-        font-size: 45px;
-    }
-    
-    #feedBackContainer{
-        display: flex;
-        padding-top: 110px;
-    }
-    
-    .feedBack{
-        width: 90%;
         background-color: #fafafa;
         text-align: center;
-        margin: 0 20px;
+        margin:0 7.5vw;
         padding-bottom: 10px;
-    }
-    
-    .feedBack img{
-        position: relative;
-        top: -30px;
-        width: 80px;
-        height: 80px;
-    }
-    
-    .names{
-        color: #242d52;
-        font-size: 24px;
-    
-    }
-    .feedBack p{
-        color: #9197ac;
-        padding: 10px 22px;
+        width: 100%;
+        transition: 1.5s;  
     }
 
-    #thirdContainer button{
-        margin-top: 20px;
-    } 
-    */
+    .feedBack p{
+        padding-top: 15px;
+        width: 80vw;
+        line-height: 35px;
+    }
+    /*FeedBack end (from the thirdPartContainer)*/   
+
+    /*Manual buttons start*/     
+    #thirdContainer input{
+        display: none;
+    }
+
+    #feedBackBtns{   
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manualBtn{
+        border: 3px solid #ee6339;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+        margin-right: 40px;
+    }
+    
+    .manualBtn:hover{
+        background: #ee6339;
+    }
+
+    #AnishasBtn:checked ~ .firstFeedBack{
+        margin-left: 0;
+    }
+    
+    #AlisBtn:checked ~ .firstFeedBack{
+        margin-left: -100%;
+    }
+    
+    #RichardsBtn:checked ~ .firstFeedBack{
+        margin-left: -200%;
+    }
+    /*Manual buttons end*/ 
+    /*Third Container end(the thirdPart from the page)*/
+
 }
 
+       
 .startButton{
     color:#ffffff;
     background-color: #ee6339;
