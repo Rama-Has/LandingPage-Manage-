@@ -48,6 +48,7 @@ body{
     justify-content: space-between;
     margin: 0 auto;
     width: 40%;
+    padding-top: 10px;
 }
 
 #menu a{
@@ -72,7 +73,7 @@ text-decoration: none;
 #firstPart{
 font-size:30px;
 margin-top: 40px;
-width: 30%;
+width: 40%;
 }
 
 h1{
@@ -228,6 +229,7 @@ p{
     z-index: -6;
     margin-top: 70px;
 }
+
 .manualBtn{
     display: none;
 }
@@ -452,19 +454,20 @@ padding-left: 60%;
 #menu{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    background-color: #ee6339;
+    width: 50%;
+    background-color: #fff0eb;
     position: absolute;
-    margin: 0 auto;
+    right: 0;
     z-index: 99;
-    top: -500px;
+    /*top: -500px;*/
 }    
 
 #menu a{
-    padding: 4vh 0;
+    padding: 2.5vh 0;
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    font-weight: 600;
 }
 
 #firstPart{

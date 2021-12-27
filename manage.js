@@ -14,7 +14,9 @@
         }
         */
     }
-
+    
+    
+    
     function changeBackgroundColor(){
         navBarD.style.backgroundColor = '#ffffff';
     }
@@ -29,6 +31,9 @@
        
       function qsa(query) {
         return document.querySelectorAll(query);
-      }   
+      }  
+      
+      
+
     
 })();  
