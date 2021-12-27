@@ -699,3 +699,262 @@ margin-left: 23%;
     /*Third Container end(the thirdPart from the page)*/
 
 }
+<<<<<<< Updated upstream
+=======
+
+.manualBtn{
+    display: none;
+}
+       
+.startButton{
+    color:#ffffff;
+    background-color: #ee6339;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.startButton:hover{
+    box-shadow: 0 0 15px 0 #ee6339;
+}
+
+#startButton3{
+    color: #ee6339;
+    background-color: #ffffff;
+    border: none;
+    padding: 18px 29px;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-top: 80px;
+    position: absolute;
+    right: 0;                                   
+}
+
+#firstFooter{
+/*background : url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");*/
+    background-color: #ee6339;
+   /* width:100%;*/
+    margin-top: 120px; 
+    color: #ffffff;
+    padding: 20px 7.5% 20px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+#firstFooter img:nth-child(1){
+    width: 584px;                            
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    top: -39px;
+    left: 76px;
+}
+
+#secPart3 + img{
+    width:600px;
+    height: 600px;
+    opacity: 10%;
+    position: absolute;
+    right: -381px;
+    bottom: 40px;
+
+}
+
+#firstFooter h1 {
+    line-height: 40px;
+    position: relative;
+    left: 0;
+}
+
+#firstPart3{
+    width: 50%;
+}
+
+#secPart3{
+    position: relative;
+    width: 40%;
+}
+
+#dots{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#dots2{
+    flex-direction: column;
+    display: flex;
+    gap:5px;
+}
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+                                  
+#allDots{
+      margin-top: 15px;
+      display: flex;
+      gap:5px;
+    }
+
+#secFooter{
+    width: 100%;
+    display: flex;
+    background-color: #23242e;
+    padding-bottom: 50px;
+}
+
+.logo{
+    gap:10px;
+    display: flex;
+    flex-direction:row ;
+}
+  
+  #menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+    line-height:35px ;
+  }
+  
+  #menuFooter{
+      display: flex;
+      flex-direction: row;
+      gap:40px;
+      padding-left: 30px;
+      padding-top: 60px;
+  }
+  
+  #secFooter .logo{
+      padding-bottom: 100px;
+  }
+  
+  #firstPart4 {
+      padding-left:270px;
+      padding-top:40px ;
+      padding-right: 200px;
+  }
+  
+  #secFooter img {
+      width: 25px;
+      height: 25px;
+  }
+
+  #menuColumn1{
+   display: flex;
+   flex-direction: column;
+}
+
+#menuColumn2{
+    display: flex;
+    flex-direction: column;
+}
+
+#menuFooter a:hover{
+    color: #ee6339;      
+    }
+
+    #firstPart3{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #firstPart3 h1{
+    font-size: 45px;
+    line-height:50px ;
+    }
+
+    label{
+        background-color: #ffffff;
+        padding: 10px 25px;
+        border-radius: 5rem;
+        cursor: pointer;
+        margin-top: 80px;
+           padding-top:90px;
+           padding-left: 150px;
+    } 
+     
+    @media screen and (max-width: 767px){                                                         
+        .icon{
+         width: 35px;
+         height: 5px;
+         background-color: #242d52;
+         margin: 6px 0;
+        }
+        #navBar {
+         display: flex;
+         position: relative;
+        }
+         #icons{
+            position: absolute;
+            right: 0;
+          }
+        #firstPart{
+            width: 100%;
+            padding-left: 10%;
+            padding-bottom: 20%;
+        }
+        #secPart img{
+        padding-left: 10%;
+        }
+        
+        #Fcontainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        
+        #firstFooter{
+            margin-top: 120px; 
+            height: 270px;
+            overflow: hidden;
+            padding-top: 50px;
+            flex-direction: column;
+            
+        }
+        
+        #copyright{
+            position: absolute;
+            top: 60px;
+        }
+        
+        #menuFooter{
+          padding-left: 35%;
+          gap:15%
+        }
+        #socialMedia{
+        flex-direction: row;
+        padding-bottom: 20px;
+        
+        }
+        .social{
+        padding-left: 20%;
+        }
+        #secFooter{
+            flex-direction: column-reverse;
+        }
+        #menuAndsec{
+            flex-direction: column-reverse;
+        } 
+        #firstPart4 .logo{
+        padding-left: 40%;
+        padding-top: 20px;
+        }
+        #firstPart4{
+            padding-left: 15%;
+            padding-right: 20%;
+            display: flex;
+            flex-direction: column-reverse;
+        
+        }
+        #secPart4 label{
+            padding-right: 20%;
+        }
+        
+        }                     
+>>>>>>> Stashed changes
