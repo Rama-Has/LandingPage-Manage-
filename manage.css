@@ -14,44 +14,7 @@ body{
     color: #242d52;
     /*color: #242d52;*/
 }
-/*
-}
-body{
-    background-image:url("https://manage-to.netlify.app/images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    font-family: 'Be Vietnam';
-     background-position:-380px 300px;
-    color: #242d52;
-}
-#navBar{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-top:40px;
-    margin-left: 40px;
-   position: relative; 
-}
-a{
-color: #242d52;
-text-decoration: none;
-}
-#navbarD{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    position: sticky;
-    padding: 20px 0;
-    top: 0;
-    background-color: white;
-    z-index: 1500;
-}
-#menu{
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 20%;
-}
-*/
+
                
 #firstBackground{
     position: absolute;
@@ -67,13 +30,13 @@ text-decoration: none;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-top:40px;
+    padding-top: 20px;
     margin-left: 40px;  
 }
 
 #navbarD{
     width: 100%;
-    padding: 0 7.5% 0 0;
+    padding: 0px 7.5% 15px 0;
     position: sticky; 
     top: 0;
     z-index: 100;
@@ -94,7 +57,8 @@ text-decoration: none;
 
 #menu a:hover{
     text-decoration-color: #ee6339;
-    text-decoration-line: underline;      
+    text-decoration-line: underline;   
+    cursor: pointer;           
 }
 
 .container{
@@ -448,46 +412,57 @@ padding-left: 60%;
     border-radius: 50%;
     color: white;
   }
-  /*.fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  .fa:hover {
-    opacity: 0.7;
-  }
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }*/
+  
+@media screen and (max-width: 1000px){ 
 
-@media screen and (max-width: 1000px){                                                         
 .icon{
  width: 35px;
  height: 5px;
  background-color: #242d52;
  margin: 6px 0;
 }
-#menu{
-    bottom: 1000px;
+
+#icons{
+    position: absolute;
+    right:  55px;
+    cursor: pointer;            
+  }
+
+#navbarD button{
+    display: none;
 }
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #ee6339;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 99;
+    top: -500px;
+}    
+
+#menu a{
+    padding: 4vh 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #firstPart{
 padding-left: 10%;
 }
+
 #navBar {
  display: flex;
  position: relative;
 }
+
 .fa{
     padding: 20px;
 }
- #icons{
-    position: absolute;
-    right: 10;
-  }
+
 #firstPart{
     width: 100%;
     padding-left: 5%;
@@ -516,10 +491,12 @@ padding-left: 5%;
     
 }
 
+/*
 #copyright{
     position: absolute;
-    top: 60px;
+    bottom: 60px;
 }
+*/
 
 #menuFooter{
   padding-left: 20%;
@@ -556,6 +533,7 @@ margin-top: -40px;
 margin-left: 23%;
 }
 }
+
 @media screen and (max-width: 1000px){    
     /*Add margin- bottom to the firstPart1 to keep the background photo*/
    body{
@@ -674,14 +652,18 @@ margin-left: 23%;
         padding-top: 15px;
         width: 80vw;
         line-height: 35px;
+    } 
+
+    .description::before{
+        display: none;
     }
     /*FeedBack end (from the thirdPartContainer)*/   
 
-    /*Manual buttons start*/     
-    #thirdContainer input{
-        display: none;
+    /*Manual buttons start*/ 
+    
+    #thirdContainer > .startButton{
+        margin-top: 80px;
     }
-
     #feedBackBtns{   
         margin-top: -40px;
         display: flex;
@@ -695,6 +677,7 @@ margin-left: 23%;
         border-radius: 10px;
         transition: 1s;
         margin-right: 40px;
+        display: flex;
     }
 
     .manualBtn:hover{
