@@ -40,7 +40,6 @@ body{
     position: sticky; 
     top: 0;
     z-index: 100;
-    background-color: white;
 }
 
 #menu{
@@ -424,26 +423,26 @@ padding-left: 60%;
 
 @media screen and (max-width: 1000px){ 
 
-    #menuFooter a{
-        color: #ffffff;
-        text-decoration: none;
-        font-size: small;
-        line-height:35px ;
-      }
+#menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+    line-height:35px ;
+    }
       
-      #menuFooter{
-          display: flex;
-          flex-direction: row;
-          gap:80%;
-          padding-top: 60px;
-      }
-      
-.icon{
- width: 35px;
- height: 5px;
- background-color: #242d52;
- margin: 6px 0;
+#menuFooter{
+    display: flex;
+    flex-direction: row;
+    gap:80%;
+    padding-top: 60px;
 }
+
+.icon{
+    width: 35px;
+    height: 5px;
+    background-color: #242d52;
+    margin: 6px 0;
+    }
 
 #icons{
     position: absolute;
@@ -455,7 +454,7 @@ padding-left: 60%;
     display: none;
 }
 
-#menu{
+#menu {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -463,7 +462,7 @@ padding-left: 60%;
     position: absolute;
     right: 0;
     z-index: 99;
-    /*top: -500px;*/
+    top: -500px;
 }    
 
 #menu a{
@@ -721,6 +720,7 @@ margin-left: 23%;
         background: #ee6339;
     }
 
+    /*
     #AnishasBtn:checked ~ .firstFeedBack{
         margin-left: 0;
     }
@@ -732,6 +732,7 @@ margin-left: 23%;
     #RichardsBtn:checked ~ .firstFeedBack{
         margin-left: -200%;
     }
+
     /*Manual buttons end*/ 
     /*Third Container end(the thirdPart from the page)*/
 

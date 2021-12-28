@@ -1,39 +1,27 @@
-
 "use strict";
 
-(function() {
-    window.addEventListener('load',initial);
-    let navBarD = id('navbarD');
-    function initial(){
-        navBarD.addEventListener('scroll', changeBackgroundColor());    
-        /*
-        if(document.body.scrollTop > 15 || document.documentElement.scrollTop > 15){
-            navBarD.style.backgroundColor = '#ffffff';
-        } else{
-            navBarD.style.backgroundColor = 'none';
-        }
-        */
-    }
-    
-    
-    
-    function changeBackgroundColor(){
-        navBarD.style.backgroundColor = '#ffffff';
-    }
-        
-    function qs(selector) {
-        return document.querySelector(selector);
-      }
 
-      function id(name) {
-        return document.getElementById(name);
-      }
-       
-      function qsa(query) {
-        return document.querySelectorAll(query);
-      }  
-      
-      
+  $(document).ready(function(){
+    /*Changing the background of the navBar while scrolling the window*/
+    $(window).scroll(function(){
+      if ($(window).scrollTop() > 80){
+        $("#navbarD").css('background-color', 'white');
+      }else{($(window).scrollTop() < 130)
+        $("#navbarD").css('background-color', 'rgba(255, 255, 255, 0)');  
+      }                 
+    });
 
-    
-})();  
+    $('#AnishasBtn').click(function(){
+      $('.firstFeedBack').css('margin-left', 0);
+    });    
+
+    $('#AlisBtn').click(function(){
+      $('.firstFeedBack').css('margin-left', -window.outerWidth);
+    }); 
+
+    $('#AnishasBtn').click(function(){
+      $('.firstFeedBack').css('margin-left', 0);
+    });                                                
+
+         
+  });  
