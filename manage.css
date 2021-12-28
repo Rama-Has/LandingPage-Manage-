@@ -405,6 +405,10 @@ padding-left: 60%;
     flex-direction: row;
 }
 
+#socialMedia a:hover{
+    color: #ee6339;        
+}
+
 .fa {
     padding: 20px;
     padding-left: 0;
