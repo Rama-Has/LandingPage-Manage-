@@ -542,7 +542,11 @@ padding-left: 60%;
         height: 270px;
         overflow: hidden;
         padding-top: 50px;
-        flex-direction: column;}
+        flex-direction: column;
+    }
+    #firstFooter h1{
+        font-size: 6vw;
+    }
 
 
     #copyright{
