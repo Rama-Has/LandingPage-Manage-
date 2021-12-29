@@ -429,158 +429,164 @@ padding-left: 60%;
 
 @media screen and (max-width: 1000px){ 
 
-#menuFooter a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: small;
-    line-height:35px ;
-    }
-      
-#menuFooter{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    gap:80%;
-    padding-top: 60px;
-}
-
-.icon{
-    width: 35px;
-    height: 5px;
-    background-color: #242d52;
-    margin: 6px 0;
+    #menuFooter a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: small;
+        line-height:35px ;
+        }
+        
+    #menuFooter{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap:80%;
+        padding-top: 60px;
     }
 
-#icons{
-    position: absolute;
-    right:  55px;
-    cursor: pointer;            
-  }
+    .icon{
+        width: 35px;
+        height: 5px;
+        background-color: #242d52;
+        margin: 6px 0;
+        }
 
-  .roratedIcons{
-  width: 35px;
-  height: 5px;
-  background-color: #242d52;
-  margin: 6px 0;
-}
-  .roratedIcons:nth-child(1){
-    transform: rotate(45deg);
-  } 
-  
-  .roratedIcons:nth-child(2){
-      display: none;
-  }
+    #icons{
+        position: absolute;
+        right:  55px;
+        cursor: pointer;            
+    }
 
-  .roratedIcons:nth-child(3){
-    transform: rotate(-45deg);
-  }
-
-#navbarD button{
-    display: none;
-}
-
-#menu {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    background-color: #fff0eb;
-    position: absolute;
-    right: 0;
-    z-index: 99;
-    top: -500px;
-}    
-
-#menu a{
-    padding: 2.5vh 0;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    font-weight: 600;
-}
-
-#navBar {
- display: flex;
- position: relative;
-}
-
-#firstPart{
-    width: 100%;
-    padding-left: 5%;
-    padding-bottom: 20%;
-}
-#firstPart .startButton{
-    margin-left: 35%;
-}
-#secPart img{
-    width:250%;
-padding-left: 5%;
-}
-
-#Fcontainer{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-
-#firstFooter{
-    margin-top: 120px; 
-    height: 270px;
-    overflow: hidden;
-    padding-top: 50px;
-    flex-direction: column;
+    .roratedIcons{
+        width: 35px;
+        height: 5px;
+        background-color: #242d52;
+        margin: 6px 0;
+    }
+    .roratedIcons:nth-child(1){
+        transform: rotate(45deg);
+    } 
     
-}
+    .roratedIcons:nth-child(2){
+        display: none;
+    }
 
-/*
-#copyright{
-    position: absolute;
-    bottom: 60px;
-}
-*/
+    .roratedIcons:nth-child(3){
+        transform: rotate(-45deg);
+    }
 
-#menuFooter{
-  padding-left: 20%;
-  gap:40%
+    #navbarD button{
+        display: none;
+    }   
 
-}
-#socialMedia{
-flex-direction: row;
-padding-bottom: 20px;
-padding-left: 24%;
-}
-#secFooter{
-    flex-direction: column-reverse;
-}
-#menuAndsec{
-    flex-direction: column-reverse;
-} 
-#firstPart4 .logo{
-padding-left: 40%;
-padding-top: 20px;
-}
-#firstPart4{
-    padding-left: 10%;
-    padding-right: 20%;
-    display: flex;
-    flex-direction: column-reverse;
+    #menu {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: #fff0eb;
+        position: absolute;
+        right: 0;
+        z-index: 99;
+        top: -500px;
+    }    
 
-}
-#secPart4 label{
-    padding-right: 10%;
-}
-#secPart3{
-margin-top: -40px;
-margin-left: 23%;
-}
-#secPart3 + img{
-    display: none;  
-}
+    #menu a{
+        padding: 2.5vh 0;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 600;
+    }
 
-#secPart4{   
-    text-align: center;
-    padding: 0;
-    padding-top: 50px;
-}
+    #navBar {
+        display: flex;
+        position: relative;
+    }
+
+    #firstPart{
+        width: 100%;
+        padding-left: 5%;
+        padding-bottom: 20%;
+    }
+
+    #firstPart .startButton{
+        margin-left: 35%;
+    }
+
+    #secPart img{
+        width:250%;
+        padding-left: 5%;
+    }
+
+    #Fcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    #firstFooter{
+        margin-top: 120px; 
+        height: 270px;
+        overflow: hidden;
+        padding-top: 50px;
+        flex-direction: column;}
+
+
+    #copyright{
+        margin: 0 auto;
+        padding: 0 0 100px;
+        width:fit-content;
+        
+    } 
+
+    #menuFooter{
+    padding-left: 20%;
+    gap:40%
+
+    }
+    #socialMedia{
+    flex-direction: row;
+    padding-bottom: 20px;
+    padding-left: 24%;
+    }
+    #secFooter{
+        flex-direction: column-reverse;
+    }
+    #menuAndsec{
+        flex-direction: column-reverse;
+    } 
+
+    #firstPart4 .logo{
+    padding-left: 40%;
+    padding-top: 20px;
+    }
+
+    #firstPart4{
+        padding-left: 10%;
+        padding-right: 20%;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    #secPart4 label{
+        padding-right: 10%;
+    }
+
+    #secPart3{
+        margin-top: -40px;
+        margin-left: 23%;
+    }
+
+    #secPart3 + img{
+        display: none;  
+    }
+
+    #secPart4{   
+        text-align: center;
+        padding: 0;
+        padding-top: 50px;
+    }
 
 }
 
