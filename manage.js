@@ -1,6 +1,30 @@
 "use strict";
 
 
+
+
+/*
+document.getElementById('icons').onclick=function () {
+  document.getElementById("menu").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  let iconss =document.getElementById("icons")
+  if (!event.target.match(iconss)) {
+    let dropdowns = document.querySelectorAll("#menu a");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+*/
+
+
   $(document).ready(function(){
     /*Changing the background of the navBar while scrolling the window*/
     $(window).scroll(function(){
@@ -12,18 +36,18 @@
     });
 
     $('#AnishasBtn').click(function(){
-      $('.firstFeedBack').css('margin-left', 0);
+      let outerWi = window.outerWidth;
+      $('.firstFeedBack').css('margin-left',  0.1*window.outerWidth);
+      $('.firstFeedBack').css('margin-right', 0.1*window.outerWidth);
     });    
 
     $('#AlisBtn').click(function(){
-      $('.firstFeedBack').css('margin-left', -window.outerWidth);
+      $('.firstFeedBack').css('margin-left', -1*window.outerWidth + 0.1*window.outerWidth);
     }); 
 
     $('#RichardsBtn').click(function(){
       let outerWi = window.outerWidth;
-      $('.firstFeedBack').css('margin-left', (-4*outerWi));
+      $('.firstFeedBack').css('margin-left', -2*(outerWi) + 0.1*window.outerWidth);
     }); 
-    
-   
 
   });  
