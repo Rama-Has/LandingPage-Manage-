@@ -24,15 +24,6 @@
       $('.firstFeedBack').css('margin-left', (-4*outerWi));
     }); 
     
-    $("#icons").click(function(){
-      if($("#icons div").hasClass("icon")){
-        $("#icons div").removeClass('icon');
-        $("#icons div").addClass('roratedIcons');
-      }else{
-        $("#icons div").removeClass('roratedIcons');
-        $("#icons div").addClass('icon');
-      }
-
-    });     
+   
 
   });  
