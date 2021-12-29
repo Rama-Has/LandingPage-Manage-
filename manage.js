@@ -50,4 +50,19 @@ window.onclick = function(event) {
       $('.firstFeedBack').css('margin-left', -2*(outerWi) + 0.1*window.outerWidth);
     }); 
 
+
+    $("#icons").click(function(){
+      if($("#icons div").hasClass("icon")){
+        $("#icons div").removeClass('icon');
+        $("#icons div").addClass('roratedIcons');
+        $("#menu").show();
+      }else{
+        $("#icons div").removeClass('roratedIcons');
+        $("#icons div").addClass('icon');
+        $("#menu").hide();
+      }
+
+    });  
+
+
   });  

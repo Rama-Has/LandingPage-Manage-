@@ -41,11 +41,10 @@ body{
 
 #navbarD{
     width: 100%;
-    /*padding: 0px 7.5% 15px 0;*/
+    padding: 0px 0 15px 0;
     position: sticky; 
     top: 0;
     z-index: 100;
-    overflow-x: hidden;
 }
 
 #menu{
@@ -453,8 +452,8 @@ padding-left: 60%;
 
     #icons{
         position: absolute;
-        right:  55px;
-        cursor: pointer;            
+        right:  0;
+        cursor: pointer;         
     }
 
     .roratedIcons{
@@ -463,6 +462,7 @@ padding-left: 60%;
         background-color: #242d52;
         margin: 6px 0;
     }
+    
     .roratedIcons:nth-child(1){
         transform: rotate(45deg);
     } 
@@ -485,11 +485,22 @@ padding-left: 60%;
         width: 50%;
         background-color: #fff0eb;
         position: absolute;
-        right: 0;
-        z-index: 99;
-        top: -500px;
-    }    
-
+        right: 0px;
+        top: -800px;
+        z-index: 500;
+    }  
+    
+    #active{
+        top: 70px;
+    }
+    #active a{        
+        padding: 2.5vh 0;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+    
     #menu a{
         padding: 2.5vh 0;
         text-align: center;
@@ -501,6 +512,8 @@ padding-left: 60%;
     #navBar {
         display: flex;
         position: relative;
+        margin: 0 auto;
+        width: 90%;
     }
 
     #firstPart{
@@ -718,7 +731,7 @@ padding-left: 60%;
     .description::before{
         display: none;
     }
-    
+
     /*FeedBack end (from the thirdPartContainer)*/ 
     
     #thirdContainer > .startButton{
