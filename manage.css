@@ -47,7 +47,7 @@ body{
     z-index: 100;
 }
 
-#menu{
+.menu{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -55,12 +55,12 @@ body{
     padding-top: 10px;
 }
 
-#menu a{
+.menu a{
 color: #242d52;
 text-decoration: none;
 }
 
-#menu a:hover{
+.menu a:hover{
     text-decoration-color: #ee6339;
     text-decoration-line: underline;   
     cursor: pointer;           
@@ -479,7 +479,7 @@ padding-left: 60%;
         display: none;
     }   
 
-    #menu {
+    .menu {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -490,18 +490,18 @@ padding-left: 60%;
         z-index: 500;
     }  
     
-    #active{
+    .active{
         top: 70px;
     }
-    #active a{        
+    /*.active a{        
         padding: 2.5vh 0;
         text-align: center;
         width: 100%;
         margin: 0 auto;
         font-weight: 600;
-    }
-    
-    #menu a{
+    }*/
+
+    .menu a{
         padding: 2.5vh 0;
         text-align: center;
         width: 100%;

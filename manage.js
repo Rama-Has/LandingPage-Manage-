@@ -53,16 +53,15 @@ window.onclick = function(event) {
 
     $("#icons").click(function(){
       if($("#icons div").hasClass("icon")){
-        $("#icons div").removeClass('icon');
-        $("#icons div").addClass('roratedIcons');
-        $("#menu").show();
+          $("#icons div").removeClass('icon');
+          $("#icons div").addClass('roratedIcons');
+          $(".menu").addClass('active');
       }else{
-        $("#icons div").removeClass('roratedIcons');
-        $("#icons div").addClass('icon');
-        $("#menu").hide();
+          $("#icons div").removeClass('roratedIcons');
+          $("#icons div").addClass('icon');
+          $(".menu").removeClass("active");
       }
-
-    });  
+  }); 
 
 
   });  
