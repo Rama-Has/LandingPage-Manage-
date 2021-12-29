@@ -8,11 +8,16 @@
     padding: 0;
 }
 
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body{
     font-family: 'Be Vietnam';
     overflow-x: hidden;
     color: #242d52;
-    /*color: #242d52;*/
 }
 
                
@@ -36,10 +41,11 @@ body{
 
 #navbarD{
     width: 100%;
-    padding: 0px 7.5% 15px 0;
+    /*padding: 0px 7.5% 15px 0;*/
     position: sticky; 
     top: 0;
     z-index: 100;
+    overflow-x: hidden;
 }
 
 #menu{
@@ -217,7 +223,7 @@ p{
 
 .feedBack p{
     color: #9197ac;
-    padding: 10px 22px;
+    padding: 10px 22px; 
 }                      
 
 #secBackground{
@@ -431,6 +437,7 @@ padding-left: 60%;
     }
       
 #menuFooter{
+    width: 80%;
     display: flex;
     flex-direction: row;
     gap:80%;
@@ -448,6 +455,24 @@ padding-left: 60%;
     position: absolute;
     right:  55px;
     cursor: pointer;            
+  }
+
+  .roratedIcons{
+  width: 35px;
+  height: 5px;
+  background-color: #242d52;
+  margin: 6px 0;
+}
+  .roratedIcons:nth-child(1){
+    transform: rotate(45deg);
+  } 
+  
+  .roratedIcons:nth-child(2){
+      display: none;
+  }
+
+  .roratedIcons:nth-child(3){
+    transform: rotate(-45deg);
   }
 
 #navbarD button{
@@ -473,17 +498,9 @@ padding-left: 60%;
     font-weight: 600;
 }
 
-#firstPart{
-padding-left: 10%;
-}
-
 #navBar {
  display: flex;
  position: relative;
-}
-
-.fa{
-    padding: 20px;
 }
 
 #firstPart{
@@ -529,7 +546,7 @@ padding-left: 5%;
 #socialMedia{
 flex-direction: row;
 padding-bottom: 20px;
-padding-left: 20%;
+padding-left: 24%;
 }
 #secFooter{
     flex-direction: column-reverse;
@@ -569,12 +586,7 @@ margin-left: 23%;
 
 @media screen and (max-width: 1000px){    
     /*Add margin- bottom to the firstPart1 to keep the background photo*/
-   body{
-    font-family: 'Be Vietnam';
-    color: #242d52;
-    overflow-x: hidden;
-    }
-
+  
     #navBar .startButton{
         top:-200px;
     }
@@ -589,17 +601,18 @@ margin-left: 23%;
         text-align: center;
     }
 
-    #firstPart2Title{    
-        color: #242d52; 
-        margin: 25px 0;
-        font-size: 40px;
-        width: 60%;
-        margin : 0 auto;
+    #firstPart2Title {
+        color: #242d52;
+        margin: 25px 15%;
+        font-size:6vw;
+        width: 70%;
+        /* margin: 0 auto; */
+        text-align: center;
         font-weight: bolder;
     }
-
+    
     #difference{
-        width: 70%;
+        width: 85%;
         margin: 0 auto;
         margin-top: 15px;
         color: #9197ac;
@@ -621,6 +634,7 @@ margin-left: 23%;
         color: #242d52;
        background-color: #fff0eb;
         padding: 5px 0;
+        font-size: 3.05vw;
     }
 
     .description p{
@@ -635,8 +649,8 @@ margin-left: 23%;
         content: '01';
         position: relative;
         border-radius: 2rem;
-        padding: 7.5px 24px;
-        left: -50px;
+        padding: 1.3vw 24px 1.2vw;
+        left: -26px;
         bottom: 1px;                                     
         color: white;
         font-size: 16px;
@@ -658,6 +672,8 @@ margin-left: 23%;
     #thirdContainer{
         text-align: center;  
         padding-top: 100px;
+        overflow-x: hidden;
+
     }
 
     #thirdTitle{
@@ -670,31 +686,34 @@ margin-left: 23%;
     #feedBackContainer{
         padding-top: 110px; 
         display: flex;
+        width: 300%;
         align-items: center; 
+        justify-content: space-around;
     }
 
     .feedBack{
         display: block;
         background-color: #fafafa;
         text-align: center;
-        margin:0 7.5vw;
+        /*margin:0 7.5vw;*/
         padding-bottom: 10px;
-        width: 100%;
-        transition: 1.5s;  
+        width: 80%;
+        transition: 1.5s; 
+        text-align: center; 
     }
 
     .feedBack p{
+        margin: 0 auto;
         padding-top: 15px;
-        width: 80vw;
         line-height: 35px;
+        text-align: center;
+        width: 80%;
     } 
 
     .description::before{
         display: none;
     }
-    /*FeedBack end (from the thirdPartContainer)*/   
-
-    /*Manual buttons start*/ 
+    /*FeedBack end (from the thirdPartContainer)*/ 
     
     #thirdContainer > .startButton{
         margin-top: 80px;
@@ -720,20 +739,6 @@ margin-left: 23%;
         background: #ee6339;
     }
 
-    /*
-    #AnishasBtn:checked ~ .firstFeedBack{
-        margin-left: 0;
-    }
-
-    #AlisBtn:checked ~ .firstFeedBack{
-        margin-left: -100%;
-    }
-
-    #RichardsBtn:checked ~ .firstFeedBack{
-        margin-left: -200%;
-    }
-
-    /*Manual buttons end*/ 
     /*Third Container end(the thirdPart from the page)*/
 
 }
