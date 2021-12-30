@@ -714,6 +714,7 @@ padding-left: 60%;
     }
 
     .feedBack{
+        display: block;
         background-color: #fafafa;
         text-align: center;
         padding-bottom: 10px;
