@@ -30,7 +30,7 @@ window.onclick = function(event) {
     $(window).scroll(function(){
       if ($(window).scrollTop() > 80){
         $("#navbarD").css('background-color', 'white');
-      }else{($(window).scrollTop() < 130)
+      }else{
         $("#navbarD").css('background-color', 'rgba(255, 255, 255, 0)');  
       }                 
     });
